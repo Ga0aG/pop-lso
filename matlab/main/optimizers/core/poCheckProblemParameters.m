@@ -6,9 +6,9 @@ function [problemParameters, ...
 % Check whether all problem parameters are set properly.
 %
 % Input ->
-%   problemParameters : problem parameters, specified as a structure scalar
+%   problemParameters : problem parameters, specified as a structure scalar.
 % Output <-
-%   problemParameters  : problem parameters, specified as a structure scalar
+%   problemParameters  : problem parameters, specified as a structure scalar.
 %   name               : problem name, specified as a character vector or a string scalar.
 %   dimension          : problem dimension, specified as a positive integer scalar.
 %   upperBounds        : upper bounds for all individuals during search,
