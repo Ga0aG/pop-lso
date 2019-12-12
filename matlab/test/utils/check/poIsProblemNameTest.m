@@ -10,3 +10,4 @@ disp(poIsProblemName([]));
 disp(poIsProblemName({}));
 disp(poIsProblemName(["abc" "xyz"]));
 disp(poIsProblemName({"abc"; "xyz"}));
+disp(poIsProblemName(['a'; 'b']));

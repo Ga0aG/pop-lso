@@ -6,7 +6,7 @@ function TF = poIsProblemName(A)
 % Output <-
 %   TF : Returns logical 1 (ture) if input is the problem name.
 %        Otherwise, it returns logical 0 (false).
-if ischar(A)
+if ischar(A) && isrow(A)
     TF = true;
 else
     if isscalar(A) && isstring(A)
