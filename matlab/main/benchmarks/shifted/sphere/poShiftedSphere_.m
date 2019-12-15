@@ -12,7 +12,7 @@ if ~isvector(x)
 end
 persistent poShiftVector;
 if isempty(poShiftVector) || any(size(poShiftVector) ~= size(x))
-    poShiftVector = poLoadShiftVector('poSphere', funcDim);
+    poShiftVector = poLoadShiftVector('poSphere', numel(x));
     if isrow(x)
         poShiftVector = poShiftVector';
     end
