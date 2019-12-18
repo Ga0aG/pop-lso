@@ -21,9 +21,6 @@ if isempty(poRotationMatrix) || any(size(poRotationMatrix) ~= [funcDim funcDim])
 end
 if isempty(poShiftVector) || any(size(poShiftVector) ~= size(x))
     poShiftVector = poLoadShiftVector('poSphere', numel(x));
-    if isrow(x)
-        poShiftVector = poShiftVector';
-    end
 end
 
 y = poSphere_(poRotationMatrix * (x - poShiftVector));
