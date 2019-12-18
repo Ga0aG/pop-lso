@@ -2,7 +2,7 @@ function TF = poCheckBenchmarkManually(name, X, y, tol, isShifted)
 % Check the benchmark function manually.
 %
 % Input ->
-%   name      : function name, specified as a character vector or a string scalar.
+%   name      : Function name, specified as a character vector or a string scalar.
 %   X         : Population, specified as a matrix whose row and column size
 %               equal function dimension (F) and population size (P), respectively.
 %               Each column of X denotes an independent individual in the population.
@@ -10,7 +10,7 @@ function TF = poCheckBenchmarkManually(name, X, y, tol, isShifted)
 %               Each element of y is the fitness of each individual (column) of X.
 %   tol       : Comparison tolerance, specified as a non-negative scalar.
 %               If no value is specified, then the default is 1e-12.
-%   isShifted : whether the function is shifted, specified as a boolean scalar.
+%   isShifted : Whether the function is shifted, specified as a boolean scalar.
 %               If no value is specified, then the default is false.
 % Output <-
 %   TF : Returns logical 1 (true) if pass the checking within the toleration.
@@ -51,17 +51,20 @@ for fi = 1 : length(functions)
     if strcmp(func(end - 1 : end), 'PF')
         if ~poIsMatrixEquality(feval(func, X'), y', tol)
             TF = false;
+            return;
         end
     elseif strcmp(func(end), '_')
         for t = 1 : popSize
             if ~poIsMatrixEquality(feval(func, X(:, t)), y(t), tol) || ...
                     ~poIsMatrixEquality(feval(func, X(:, t)'), y(t), tol)
                 TF = false;
+                return;
             end
         end
     else
         if ~poIsMatrixEquality(feval(func, X), y, tol)
             TF = false;
+            return;
         end
     end
 end
