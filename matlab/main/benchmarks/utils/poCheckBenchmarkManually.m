@@ -36,7 +36,8 @@ if nargin < 5
 end
 
 if isShifted
-    poShiftVector = poLoadShiftVector(name, funcDim); % [funcDim, 1]
+    funcName = [name(1 : 2) name(10 : end)]; % delete `shifted`
+    poShiftVector = poLoadShiftVector(funcName, funcDim); % [funcDim, 1]
     poShiftVector = repmat(poShiftVector, 1, popSize); % [funcDim, popSize]
     X = X + poShiftVector; % + rather than -
 end
