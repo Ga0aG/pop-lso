@@ -24,11 +24,13 @@ poManuallyCheckBenchmark(funcName, X, y, true);
 X = poLoadTestCases(5);
 y = [0 1032655 1032655 1032655 25515092 25515092 1136022];
 poManuallyCheckBenchmark(funcName, X, y, true);
+% poCheckBenchmarkManually(funcName, X, y, 1, true);
 
 %%
 X = poLoadTestCases(6);
 y = [0 1067345 1067345 1067345 37643416 37643416 1292664];
 poManuallyCheckBenchmark(funcName, X, y, true);
+% poCheckBenchmarkManually(funcName, X, y, 1, true);
 
 %%
 X = poLoadTestCases(7);
