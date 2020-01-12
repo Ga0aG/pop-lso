@@ -22,3 +22,14 @@ poAutomaticallyCheckBenchmark(funcName);
 toc;
 
 %%
+% poRotatedSphere : pass the manual checking within the tolerance `1.00e-12`.
+% poRotatedSphere : pass the manual checking within the tolerance `1.00e-12`.
+% poRotatedSphere : pass the manual checking within the tolerance `1.00e-12`.
+% poRotatedSphere : pass the manual checking within the tolerance `1.00e-12`.
+% poRotatedSphere : pass the manual checking within the tolerance `1.00e-12`.
+% poRotatedSphere : pass the manual checking within the tolerance `1.00e-12`.
+% poRotatedSphere : pass the manual checking within the tolerance `1.00e-12`.
+% poRotatedSphere : pass the manual checking within the tolerance `1.00e-12`.
+% poRotatedSphere : pass the manual checking within the tolerance `1.00e-12`.
+% poRotatedSphere : pass the manual checking within the tolerance `1.00e-12`.
+% poRotatedSphere : pass the automatic checking within the tolerance `1.00e-09`.
