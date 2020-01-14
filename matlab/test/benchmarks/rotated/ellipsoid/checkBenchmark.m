@@ -20,3 +20,16 @@ toc;
 tic;
 poAutomaticallyCheckBenchmark(funcName);
 toc;
+
+%%
+% poRotatedEllipsoid : pass the manual checking within the tolerance `1.00e-12`.
+% poRotatedEllipsoid : pass the manual checking within the tolerance `1.00e-12`.
+% poRotatedEllipsoid : pass the manual checking within the tolerance `1.00e-12`.
+% poRotatedEllipsoid : pass the manual checking within the tolerance `1.00e-12`.
+% poRotatedEllipsoid : pass the manual checking within the tolerance `1.00e-12`.
+% poRotatedEllipsoid : pass the manual checking within the tolerance `1.00e-12`.
+% poRotatedEllipsoid : pass the manual checking within the tolerance `1.00e-12`.
+% poRotatedEllipsoid : pass the manual checking within the tolerance `1.00e-12`.
+% poRotatedEllipsoid : pass the manual checking within the tolerance `1.00e-12`.
+% poRotatedEllipsoid : pass the manual checking within the tolerance `1.00e-12`.
+% poRotatedEllipsoid : pass the automatic checking within the tolerance `1.00e-03`.
